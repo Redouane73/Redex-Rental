@@ -1,0 +1,31 @@
+.navigation {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+    background-color: #171614;
+}
+
+.link {
+    margin: 1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.link:hover {
+    color: #0047aa;
+    transition: 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        padding: 0;
+    }
+    .nav-links {
+        display: none;
+    }
+}
+
+
