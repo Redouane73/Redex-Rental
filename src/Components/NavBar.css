@@ -1,12 +1,19 @@
 .navigation {
+    position: fixed;
+    width: 100vw;
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 4rem;
     background-color: #171614;
+    z-index: 1;
 }
-
+.left-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .link {
     margin: 1rem;
     text-decoration: none;
@@ -15,17 +22,73 @@
     cursor: pointer;
 }
 .link:hover {
-    color: #0047aa;
+    color: #AD2323;
     transition: 0.3s ease;
 }
 
-@media (max-width: 768px) {
-    .navigation {
-        padding: 0;
-    }
-    .nav-links {
-        display: none;
-    }
+.right-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
+
+
+/* From Uiverse.io by Creatlydev */ 
+.button {
+    line-height: 1;
+    text-decoration: none;
+    display: inline-flex;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: #AD2323;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 0.5rem 1.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background-color 0.3s;
+  }
+  
+  .button__icon-wrapper {
+    flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    color: #AD2323;
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  }
+  
+  .button:hover {
+    background-color: #000;
+  }
+  
+  .button:hover .button__icon-wrapper {
+    color: #000;
+  }
+  
+  .button__icon-svg--copy {
+    position: absolute;
+    transform: translate(-150%, 150%);
+  }
+  
+  .button:hover .button__icon-svg:first-child {
+    transition: transform 0.3s ease-in-out;
+    transform: translate(150%, -150%);
+  }
+  
+  .button:hover .button__icon-svg--copy {
+    transition: transform 0.3s ease-in-out 0.1s;
+    transform: translate(0);
+  }
+  
 
 
